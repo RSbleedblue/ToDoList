@@ -1,0 +1,125 @@
+*{
+    font-family:cursive;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg,rgb(180, 113, 113),rgb(152, 152, 191));
+    padding: 10px;
+}
+.todos{
+    width: 100%;
+    max-width: 540px;
+    background-color: #ffffff;
+    margin:100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    color: rgb(56, 26, 164)!important;
+}
+.title{
+    display: inline;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 10px;
+    width: 300px;
+    height: 300px;
+}
+.title img{
+    width: 50px;
+    height: 50px;
+
+}
+.title h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+.inputBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding-left: 20px;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    color: #fff !important;
+    background-color: aliceblue;
+}
+#input-text{
+    border: none;
+    outline: none;
+    flex: 1;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    color: #0b0000;
+}
+button{
+    display: flex;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 40px;
+    background-color: rgb(213, 68, 10);
+    padding: 16px 50px;
+    width: 100px;
+    margin-left: 150px;
+    color: #fff;
+    box-shadow: 2px 2px 5px 1px rgb(109, 80, 80);;
+}
+button:hover{
+    transform: scale(1.02);
+    transition: 1ms ease-in-out;
+}
+
+ul li{
+    list-style:none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(image/60248-200.png);
+    background-size:cover;
+    background-position: center;
+    top:10px;
+    margin-left: -29px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url(image/Flat_tick_icon.svg.png);
+    height: 22px;
+    width: 22px; 
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top:10px;
+    width: 30px;
+    height: 30px;
+    font-size: 22px;
+    color: #555;
+    line-height:30px;
+    text-align: center;
+    border-radius: 50%;
+}
+ul li span:hover{
+    background: #0b00002a;
+}

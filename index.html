@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TodoList</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" type="icon" href="image/Flat_tick_icon.svg.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <div class="container"> 
+            <div class="todos">
+                <div class="title">
+                    <h2>To-Do-List <img src="image/762096.png"></h2>
+                </div>
+                <div class="inputBar">
+                    <input type="text" id="input-text" placeholder="Write your text..">
+                    <button type="button" onclick="addTask()" id="btn">Smash!</button>
+                </div>
+                <div id="todolist">
+                    <ul>
+                        <!-- List items will be added dynamically through JavaScript -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
